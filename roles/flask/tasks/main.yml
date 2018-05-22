@@ -1,0 +1,30 @@
+---
+- name: Actualizar repositorios
+  apt:
+    update_cache: yes
+    cache_valid_time: 600
+
+- name: Instalar python-pip
+  apt:
+    name: "{{ item }}"
+    state: present
+  with_items:
+    - "python-pip"
+
+- name: Instalar requisitos
+  pip:
+    name: "{{ item }}"
+    state: present
+  with_items:
+    - "flask"
+    - "gunicorn"
+
+- name: Crear aplicacion
+  file:
+   path: "/app"
+   state: directory
+
+- name: Configurar aplicacion
+  copy:
+    src: app.py
+    dest: /app/app.py

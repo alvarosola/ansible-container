@@ -1,0 +1,17 @@
+---
+- name: Actualizar repositorio
+  apt:
+    update_cache: yes
+    cache_valid_time: 600
+
+- name: Instalar nginx
+  apt:
+    name: "{{ item }}"
+    state: present
+  with_items:
+    - "nginx"
+
+- name: Configurar nginx
+  template:
+    src: default
+    dest: /etc/nginx/nginx_ansible.conf
