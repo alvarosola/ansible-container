@@ -1,7 +1,9 @@
 # Ansible-Container
-Proyecto Integrado sobre Ansible Container. 
+Proyecto Integrado de fin de curso del ciclo superior Administración de Sistemas Informáticos en Red sobre Ansible Container. 
 
-La configuración despliega una aplicación Flask sobre un servidor web Nginx, en un contenedor Ubuntu.
+Ansible Container es una tecnología creada para proporcionar un flujo de trabajo centrado en Ansible para construir, ejecutar, probar y desplegar contenedores. 
+
+El objetivo de este proyecto es crear y administrar contenedores a través de una receta Ansible sin tener que utilizar ficheros Dockerfile y desplegar una aplicación Flask que interactue con un servidor web Nginx en un contenedor Ubuntu.
 
 ## Prerrequisitos
 * Python 2.7 o Python 3.5
