@@ -1,5 +1,5 @@
 # Ansible-Container
-Proyecto Integrado de fin de curso del ciclo superior Administración de Sistemas Informáticos en Red sobre Ansible Container. 
+Proyecto Integrado de fin de grado del ciclo superior Administración de Sistemas Informáticos en Red.
 
 Ansible Container es una tecnología creada para proporcionar un flujo de trabajo centrado en Ansible para construir, ejecutar, probar y desplegar contenedores. 
 
